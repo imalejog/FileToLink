@@ -65,8 +65,8 @@ async def gen_links(fwd_msg: Message, shortener: bool = True) -> Dict[str, str]:
     f_hash = get_hash(fwd_msg)
     # slink = f"{base_url}/watch/{f_hash}{fid}/{enc_fname}"
     # olink = f"{base_url}/{f_hash}{fid}/{enc_fname}"
-    slink = f"{base_url}/watch/{fid}"
-    olink = f"{base_url}/{fid}"
+    slink = f"{base_url}/watch/kpsbots-{f_hash}{fid}"
+    olink = f"{base_url}/kpsbots-{f_hash}{fid}"
     
     if shortener and getattr(Var, "SHORTEN_MEDIA_LINKS", False):
         try:
