@@ -152,10 +152,9 @@ async def media_preview(request: web.Request):
 
         # If your path is just the message_id (e.g. /watch/12345)
         message_id = path.strip("/")
-        secure_hash = None   # Not used
 
         rendered_page = await render_page(
-            message_id, secure_hash, requested_action='stream'
+            message_id, requested_action='stream'
         )
         return web.Response(text=rendered_page, content_type='text/html')
 
