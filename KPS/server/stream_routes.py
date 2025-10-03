@@ -147,30 +147,24 @@ async def status_endpoint(request):
 @routes.get(r"/watch/{path:.+}", allow_head=True)
 async def media_preview(request: web.Request):
     try:
-        # Extract only message_id from path (ignoring hash)
         path = request.match_info["path"]
-
-        # If your path is just the message_id (e.g. /watch/12345)
-        message_id = path.strip("/")
+        message_id, secure_hash = parse_media_request(path, request.query)
 
         rendered_page = await render_page(
-            message_id, requested_action='stream'
-        )
+            message_id, secure_hash, requested_action='stream')
         return web.Response(text=rendered_page, content_type='text/html')
 
-    except FileNotFound as e:
+    except (InvalidHash, FileNotFound) as e:
         logger.debug(
             f"Client error in preview: {type(e).__name__} - {e}",
-            exc_info=True
-        )
+            exc_info=True)
         raise web.HTTPNotFound(text="Resource not found") from e
     except Exception as e:
+
         error_id = secrets.token_hex(6)
         logger.error(f"Preview error {error_id}: {e}", exc_info=True)
         raise web.HTTPInternalServerError(
-            text=f"Server error occurred: {error_id}"
-        ) from e
-
+            text=f"Server error occurred: {error_id}") from e
 
 
 @routes.get(r"/{path:.+}", allow_head=True)
