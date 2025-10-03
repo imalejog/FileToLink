@@ -144,7 +144,7 @@ async def status_endpoint(request):
     })
 
 
-@routes.get(r"/watch/{path:.+}", allow_head=True)
+@routes.get(r"/watch/kpsbots-{path:.+}", allow_head=True)
 async def media_preview(request: web.Request):
     try:
         path = request.match_info["path"]
@@ -167,7 +167,7 @@ async def media_preview(request: web.Request):
             text=f"Server error occurred: {error_id}") from e
 
 
-@routes.get(r"/{path:.+}", allow_head=True)
+@routes.get(r"/kpsbots-{path:.+}", allow_head=True)
 async def media_delivery(request: web.Request):
     try:
         path = request.match_info["path"]
