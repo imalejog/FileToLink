@@ -6,4 +6,4 @@ motor
 psutil
 python-dotenv
 tgcrypto
-uvloop
+uvloop==0.21.0
