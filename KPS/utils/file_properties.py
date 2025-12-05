@@ -71,7 +71,7 @@ def get_fname(msg: Message) -> str:
             else:
                 ext = "bin"
         timestamp = dt.now().strftime("%Y%m%d%H%M%S")
-        fname = f"KPSBots - File To Link_{timestamp}.{ext}"
+        fname = f"MRVIOLETSTREAMBOT - File To Link_{timestamp}.{ext}"
     
     return fname
 

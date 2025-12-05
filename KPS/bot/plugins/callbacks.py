@@ -62,7 +62,7 @@ async def about_callback(client: Client, callback_query: CallbackQuery):
         buttons = [
             [InlineKeyboardButton(MSG_BUTTON_GET_HELP, callback_data="help_command")],
             [
-                InlineKeyboardButton(MSG_BUTTON_UPDATES, url="https://telegram.me/KPSBots"),
+                InlineKeyboardButton(MSG_BUTTON_UPDATES, url="https://telegram.me/MRVIOLETSTREAMBOT"),
                 InlineKeyboardButton(MSG_BUTTON_CLOSE, callback_data="close_panel")
             ]
         ]

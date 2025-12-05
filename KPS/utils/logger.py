@@ -12,7 +12,7 @@ LOG_FILE = os.path.join(LOG_DIR, 'bot.txt')
 
 logging._srcfile = None
 logging.logThreads = 0
-logging.logProcesses = 0 
+logging.logProcesses = 0
 
 log_queue = queue.Queue(maxsize=10000)
 
@@ -27,7 +27,7 @@ console_handler.setFormatter(formatter)
 listener = QueueListener(log_queue, file_handler, console_handler, respect_handler_level=True)
 listener.start()
 
-logger = logging.getLogger('KPSBots')
+logger = logging.getLogger('MRVIOLETSTREAMBOT')
 logger.setLevel(logging.INFO)
 logger.propagate = False
 logger.addHandler(QueueHandler(log_queue))

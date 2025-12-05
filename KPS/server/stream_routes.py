@@ -116,7 +116,7 @@ def parse_range_header(range_header: str, file_size: int) -> tuple[int, int]:
 @routes.get("/", allow_head=True)
 
 async def root_redirect(request):
-    raise web.HTTPFound("https://telegram.me/KPSBots")
+    raise web.HTTPFound("https://telegram.me/MRVIOLETSTREAMBOT")
 
 
 @routes.get("/status", allow_head=True)
@@ -144,7 +144,7 @@ async def status_endpoint(request):
     })
 
 
-@routes.get(r"/watch/kpsbots-{path:.+}", allow_head=True)
+@routes.get(r"/watch/MRVIOLETSTREAMBOT-{path:.+}", allow_head=True)
 async def media_preview(request: web.Request):
     try:
         path = request.match_info["path"]
@@ -167,7 +167,7 @@ async def media_preview(request: web.Request):
             text=f"Server error occurred: {error_id}") from e
 
 
-@routes.get(r"/kpsbots-{path:.+}", allow_head=True)
+@routes.get(r"/MRVIOLETSTREAMBOT-{path:.+}", allow_head=True)
 async def media_delivery(request: web.Request):
     try:
         path = request.match_info["path"]
